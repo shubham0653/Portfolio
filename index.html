@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham Sharma | Portfolio</title>
+    <link rel="icon" type="image/jpeg" href="profile.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Background glowing orbs for modern effect -->
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+
+    <header>
+        <nav class="navbar glass">
+            <ul id="menu" class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-btn" id="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content hidden">
+                <h3>Hello, I am</h3>
+                <h1>Shubham Sharma</h1>
+                <h2 class="typing-container">I'm a <span id="typewriter"></span><span class="cursor">|</span></h2>
+                <p>Aspiring MERN Stack Developer passionate about building modern, scalable web applications.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="hero-image hidden">
+                <div class="img-box">
+                    <img src="profile.jpg" alt="Shubham Sharma"
+                        onerror="this.src='https://via.placeholder.com/350?text=Profile+Image'">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="section-header hidden">
+                <h2>About <span>Me</span></h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text glass hidden">
+                    <h3>Passionate Web Developer</h3>
+                    <p>I am Shubham Sharma, deeply passionate about Web Development, Data Structures, Algorithms, and
+                        building scalable software architectures. I love turning ideas into reality through clean,
+                        efficient code.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills" id="skills">
+            <div class="section-header hidden">
+                <h2>My <span>Skills</span></h2>
+                <div class="underline"></div>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category glass hidden" style="--delay: 1">
+                    <h3>Frontend</h3>
+                    <div class="skill-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>React.js</span>
+                        <span>Vite</span>
+                    </div>
+                </div>
+                <div class="skill-category glass hidden" style="--delay: 2">
+                    <h3>Backend</h3>
+                    <div class="skill-tags">
+                        <span>Node.js</span>
+                        <span>Express.js</span>
+                        <span>REST APIs</span>
+                        <span>Python</span>
+                    </div>
+                </div>
+                <div class="skill-category glass hidden" style="--delay: 3">
+                    <h3>Database & Tools</h3>
+                    <div class="skill-tags">
+                        <span>MongoDB</span>
+                        <span>SQL</span>
+                        <span>Git & GitHub</span>
+                        <span>Postman</span>
+                        <span>Cloudinary</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+            <div class="section-header hidden">
+                <h2>Featured <span>Projects</span></h2>
+                <div class="underline"></div>
+            </div>
+            <div class="project-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass hidden">
+                    <div class="project-info">
+                        <h3>Ecommerce Platform</h3>
+                        <p>A full-featured MERN stack ecommerce website with user authentication, product management,
+                            and a shopping cart.</p>
+                        <div class="tech-stack">
+                            <span>MongoDB</span><span>Express</span><span>React</span><span>Node</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card glass hidden" style="--delay: 1">
+                    <div class="project-info">
+                        <h3>AI Chatbot Clone</h3>
+                        <p>An intelligent chatbot interface mimicking popular AI models, featuring modern UI and
+                            real-time response styling.</p>
+                        <div class="tech-stack">
+                            <span>React</span><span>API</span><span>CSS</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card glass hidden" style="--delay: 2">
+                    <div class="project-info">
+                        <h3>Bank Management System</h3>
+                        <p>A robust management application handling user accounts, transactions, and administrative
+                            oversight.</p>
+                        <div class="tech-stack">
+                            <span>Java</span><span>Spring</span><span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="section-header hidden">
+                <h2>Get In <span>Touch</span></h2>
+                <div class="underline"></div>
+            </div>
+            <div class="contact-container hidden">
+                <form class="contact-form glass" id="contactForm">
+                    <div class="input-group">
+                        <input type="text" id="name" name="from_name" required placeholder="Your Name">
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="email" name="reply_to" required placeholder="Your Email">
+                    </div>
+                    <div class="input-group">
+                        <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary submit-btn">
+                        <span>Send Message</span>
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="glass">
+        <p>&copy; 2026 Shubham Sharma. All Rights Reserved.</p>
+    </footer>
+
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!-- Env-style config (add config.js to .gitignore) -->
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
